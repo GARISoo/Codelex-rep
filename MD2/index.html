@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Haralda pogas</title>
+</head>
+<body>
+    <header>
+        <h1>Buttons</h1>
+    </header>
+    <main>
+        <section class="buttons">
+            <div class="row1">
+                <button class="button">Button</button>
+                <button class="button button--disabled1" disabled>Button</button>
+                <button class="button button--second">Button</button>
+                <button class="button button--disabled2" disabled>Button</button>
+            </div>
+            <div class="row2">
+                <button class="primary">Primary Button</button>
+                <button class="primary primary--disabled3" disabled>Primary Button</button>
+                <button class="primary primary--second">Secondary Button</button>
+                <button class="primary primary--disabled4" disabled>Secondary Button</button>
+            </div>
+            <div class="row3">
+                <button class="primary primary--third">Primary Button</button>
+                <button class="primary primary--disabled5" disabled>Primary Button</button>
+                <button class="primary primary--fourth">Secondary Button</button>
+                <button class="primary primary--disabled6" disabled>Secondary Button</button>
+            </div>
+            <div class="row4">
+                <button class="button1">Button 1</button>
+                <button class="button1 button1--disabled7" disabled>Button 1</button>
+                <button class="subscribe">Subscription</button>
+                <button class="subscribe subscribe--disabled8" disabled>Subscription</button>
+            </div>
+            <div class="row5">
+                <button class="normal">normal</button>
+                <button class="normal normal--disabled9" disabled>normal</button>
+                <button class="circled">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="white"/>
+                    </svg>
+                </button>
+                <button class="circled circled--disabled10" disabled>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="row6">
+                <button class="button6_1">Button</button>
+                <button class="button6_1 button6_1--disabled11" disabled>Button</button>
+                <button class="button6_2">Primary Button</button>
+                <button class="button6_2 button6_2--disabled12" disabled>Primary Button</button>
+            </div>
+        </section>
+        <section class="darkButtons">
+            <div>
+                <button class="first">Button</button>
+                <button class="first first--disabled13" disabled>Button</button>
+            </div>
+            <div>
+                <button class="second">Button</button>
+                <button class="second second--disabled14" disabled>Button</button>
+            </div>
+        </section>
+        <section class="toasts">
+            <h1 class="toasts__h1">Toasts</h1>
+            <div class="toast">
+                <span class="toast__close">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 4.58599L10.243 0.342987C10.6335 -0.0474781 11.2665 -0.0474791 11.657 0.342986C12.0475 0.733452 12.0475 1.36652 11.657 1.75699L7.41399 5.99999L11.657 10.243C12.0475 10.6335 12.0475 11.2665 11.657 11.657C11.2665 12.0475 10.6335 12.0475 10.243 11.657L5.99999 7.41399L1.75699 11.657C1.36652 12.0475 0.733452 12.0475 0.342986 11.657C-0.0474791 11.2665 -0.0474789 10.6335 0.342987 10.243L4.58599 5.99999L0.342987 1.75699C-0.0474782 1.36652 -0.0474791 0.733452 0.342986 0.342986C0.733452 -0.0474791 1.36652 -0.0474789 1.75699 0.342987L5.99999 4.58599Z" fill="white"/>
+                    </svg>                        
+                </span>          
+                <span class="toast__text">This is a toast for info</span>
+            </div>
+            <div class="toast toast--second">
+                <span class="toast--second__close">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 4.586L10.243 0.343002C10.6335 -0.0474629 11.2665 -0.0474638 11.657 0.343002C12.0475 0.733467 12.0475 1.36654 11.657 1.757L7.41399 6L11.657 10.243C12.0475 10.6335 12.0475 11.2665 11.657 11.657C11.2665 12.0475 10.6335 12.0475 10.243 11.657L5.99999 7.414L1.75699 11.657C1.36652 12.0475 0.733452 12.0475 0.342986 11.657C-0.0474791 11.2665 -0.0474789 10.6335 0.342987 10.243L4.58599 6L0.342987 1.757C-0.0474782 1.36654 -0.0474791 0.733467 0.342986 0.343002C0.733452 -0.0474638 1.36652 -0.0474637 1.75699 0.343002L5.99999 4.586Z" fill="white"/>
+                    </svg>                
+                </span>
+                <span class="toast--second__text">This is a toast for success</span>
+            </div>
+            <div class="toast toast--third">
+                <span class="toast--third__close">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 4.586L10.243 0.343002C10.6335 -0.0474629 11.2665 -0.0474638 11.657 0.343002C12.0475 0.733467 12.0475 1.36654 11.657 1.757L7.41399 6L11.657 10.243C12.0475 10.6335 12.0475 11.2665 11.657 11.657C11.2665 12.0475 10.6335 12.0475 10.243 11.657L5.99999 7.414L1.75699 11.657C1.36652 12.0475 0.733452 12.0475 0.342986 11.657C-0.0474791 11.2665 -0.0474789 10.6335 0.342987 10.243L4.58599 6L0.342987 1.757C-0.0474782 1.36654 -0.0474791 0.733467 0.342986 0.343002C0.733452 -0.0474638 1.36652 -0.0474637 1.75699 0.343002L5.99999 4.586Z" fill="white"/>
+                    </svg>                
+                </span>
+                <span class="toast--third__text">This is a toast for error</span>
+            </div>
+            <div class="toast toast--fourth">
+                <span class="toast--fourth__close">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 4.586L10.243 0.343002C10.6335 -0.0474629 11.2665 -0.0474638 11.657 0.343002C12.0475 0.733467 12.0475 1.36654 11.657 1.757L7.41399 6L11.657 10.243C12.0475 10.6335 12.0475 11.2665 11.657 11.657C11.2665 12.0475 10.6335 12.0475 10.243 11.657L5.99999 7.414L1.75699 11.657C1.36652 12.0475 0.733452 12.0475 0.342986 11.657C-0.0474791 11.2665 -0.0474789 10.6335 0.342987 10.243L4.58599 6L0.342987 1.757C-0.0474782 1.36654 -0.0474791 0.733467 0.342986 0.343002C0.733452 -0.0474638 1.36652 -0.0474637 1.75699 0.343002L5.99999 4.586Z" fill="white"/>
+                    </svg>                
+                </span>
+                <span class="toast--fourth__text">This is a toast for warning</span>
+            </div>
+            <div class="toast toast--fifth">
+                <span class="toast--fifth__close">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 4.586L10.243 0.343002C10.6335 -0.0474629 11.2665 -0.0474638 11.657 0.343002C12.0475 0.733467 12.0475 1.36654 11.657 1.757L7.41399 6L11.657 10.243C12.0475 10.6335 12.0475 11.2665 11.657 11.657C11.2665 12.0475 10.6335 12.0475 10.243 11.657L5.99999 7.414L1.75699 11.657C1.36652 12.0475 0.733452 12.0475 0.342986 11.657C-0.0474791 11.2665 -0.0474789 10.6335 0.342987 10.243L4.58599 6L0.342987 1.757C-0.0474782 1.36654 -0.0474791 0.733467 0.342986 0.343002C0.733452 -0.0474638 1.36652 -0.0474637 1.75699 0.343002L5.99999 4.586Z" fill="white"/>
+                    </svg>                
+                </span>
+                <span class="toast--fifth__text">This is a default toast</span>
+            </div>
+            <div class="toast toast--sixth">
+                <span class="toast--sixth__close">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 4.586L10.243 0.343002C10.6335 -0.0474629 11.2665 -0.0474638 11.657 0.343002C12.0475 0.733467 12.0475 1.36654 11.657 1.757L7.41399 6L11.657 10.243C12.0475 10.6335 12.0475 11.2665 11.657 11.657C11.2665 12.0475 10.6335 12.0475 10.243 11.657L5.99999 7.414L1.75699 11.657C1.36652 12.0475 0.733452 12.0475 0.342986 11.657C-0.0474791 11.2665 -0.0474789 10.6335 0.342987 10.243L4.58599 6L0.342987 1.757C-0.0474782 1.36654 -0.0474791 0.733467 0.342986 0.343002C0.733452 -0.0474638 1.36652 -0.0474637 1.75699 0.343002L5.99999 4.586Z" fill="#9D9D9D"/>
+                    </svg>                
+                </span>
+                <span class="toast--sixth__text">This is a toast for info</span>
+            </div>
+            <div class="toast toast--seventh">
+                <span class="toast--seventh__close">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 4.586L10.243 0.343002C10.6335 -0.0474629 11.2665 -0.0474638 11.657 0.343002C12.0475 0.733467 12.0475 1.36654 11.657 1.757L7.41399 6L11.657 10.243C12.0475 10.6335 12.0475 11.2665 11.657 11.657C11.2665 12.0475 10.6335 12.0475 10.243 11.657L5.99999 7.414L1.75699 11.657C1.36652 12.0475 0.733452 12.0475 0.342986 11.657C-0.0474791 11.2665 -0.0474789 10.6335 0.342987 10.243L4.58599 6L0.342987 1.757C-0.0474782 1.36654 -0.0474791 0.733467 0.342986 0.343002C0.733452 -0.0474638 1.36652 -0.0474637 1.75699 0.343002L5.99999 4.586Z" fill="#9D9D9D"/>
+                    </svg>                
+                </span>
+                <span class="toast--seventh__text">This is a toast for success</span>
+            </div>
+            <div class="toast toast--eighth">
+                <span class="toast--eighth__close">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 4.586L10.243 0.343002C10.6335 -0.0474629 11.2665 -0.0474638 11.657 0.343002C12.0475 0.733467 12.0475 1.36654 11.657 1.757L7.41399 6L11.657 10.243C12.0475 10.6335 12.0475 11.2665 11.657 11.657C11.2665 12.0475 10.6335 12.0475 10.243 11.657L5.99999 7.414L1.75699 11.657C1.36652 12.0475 0.733452 12.0475 0.342986 11.657C-0.0474791 11.2665 -0.0474789 10.6335 0.342987 10.243L4.58599 6L0.342987 1.757C-0.0474782 1.36654 -0.0474791 0.733467 0.342986 0.343002C0.733452 -0.0474638 1.36652 -0.0474637 1.75699 0.343002L5.99999 4.586Z" fill="#9D9D9D"/>
+                    </svg>                
+                </span>
+                <span class="toast--eighth__text">This is a toast for error</span>
+            </div>
+            <div class="toast toast--ninth">
+                <span class="toast--ninth__close">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 4.586L10.243 0.343002C10.6335 -0.0474629 11.2665 -0.0474638 11.657 0.343002C12.0475 0.733467 12.0475 1.36654 11.657 1.757L7.41399 6L11.657 10.243C12.0475 10.6335 12.0475 11.2665 11.657 11.657C11.2665 12.0475 10.6335 12.0475 10.243 11.657L5.99999 7.414L1.75699 11.657C1.36652 12.0475 0.733452 12.0475 0.342986 11.657C-0.0474791 11.2665 -0.0474789 10.6335 0.342987 10.243L4.58599 6L0.342987 1.757C-0.0474782 1.36654 -0.0474791 0.733467 0.342986 0.343002C0.733452 -0.0474638 1.36652 -0.0474637 1.75699 0.343002L5.99999 4.586Z" fill="#9D9D9D"/>
+                    </svg>                
+                </span>
+                <span class="toast--ninth__text">This is a toast for warning</span>
+            </div> 
+            <div class="lastToast">
+                <span class="lastToast__close">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.29289 0.292893C8.68342 -0.097631 9.31658 -0.097631 9.70711 0.292893C10.0976 0.683418 10.0976 1.31658 9.70711 1.70711L6.41421 5L9.70711 8.29289C10.0976 8.68342 10.0976 9.31658 9.70711 9.70711C9.31658 10.0976 8.68342 10.0976 8.29289 9.70711L5 6.41421L1.70711 9.70711C1.31658 10.0976 0.683417 10.0976 0.292893 9.70711C-0.0976318 9.31658 -0.0976318 8.68342 0.292893 8.29289L3.58579 5L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L5 3.58579L8.29289 0.292893Z" fill="white"/>
+                    </svg>                                        
+                </span>
+                <span class="lastToast__text">Single line</span>
+                <span class="lastToast__action"><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Action</a></span>
+            </div>
+            <div class="lastToast lastToast--second">
+                <span class="lastToast--second__close">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99999 4.586L10.243 0.343002C10.6335 -0.0474629 11.2665 -0.0474638 11.657 0.343002C12.0475 0.733467 12.0475 1.36654 11.657 1.757L7.41399 6L11.657 10.243C12.0475 10.6335 12.0475 11.2665 11.657 11.657C11.2665 12.0475 10.6335 12.0475 10.243 11.657L5.99999 7.414L1.75699 11.657C1.36652 12.0475 0.733452 12.0475 0.342986 11.657C-0.0474791 11.2665 -0.0474789 10.6335 0.342987 10.243L4.58599 6L0.342987 1.757C-0.0474782 1.36654 -0.0474791 0.733467 0.342986 0.343002C0.733452 -0.0474638 1.36652 -0.0474637 1.75699 0.343002L5.99999 4.586Z" fill="white"/>
+                    </svg>                
+                </span>
+                <span class="lastToast--second__text">Multiple lines of text. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. </span>
+                <span class="lastToast--second__action"><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Action</a></span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

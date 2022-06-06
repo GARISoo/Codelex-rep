@@ -1,0 +1,114 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: burlywood;
+}
+
+main {
+    margin: 1rem 10rem;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    filter: drop-shadow(0 0 0.4rem black)
+}
+
+ul {
+    list-style: none;
+}
+
+.left, .experience, .education {
+    background-color: whitesmoke;
+    margin: 1rem;
+}
+
+
+progress {
+    border: none;
+    width: 150px;
+    height: 7.5px;
+    background: crimson;
+}
+ 
+progress::-webkit-progress-value {
+    background: rgb(187, 180, 85);
+}
+  
+progress::-webkit-progress-bar {
+    background: rgb(227, 227, 238);
+}
+
+
+.personal-info, .skills, .languages, .interests {
+    padding: 0.5rem 1rem;
+    line-height: 1.5;
+}
+
+.interest-list {
+    text-align: center;
+    line-height: 2.5;
+}
+
+.interest-list i {
+    color: black;
+    border-radius: 10px;
+    border: 3px solid rgb(187, 180, 85);
+    padding: 4px;
+    font-style: normal;
+}
+
+.left-image img {
+    width: 100%;
+    height: auto;
+}
+
+.experience, .education {
+    line-height: 1.5;
+    padding: 2rem;
+}
+
+.experience ul {
+    margin: 1rem 0;
+}
+
+.work-pos {
+    font-weight: bold;
+}
+
+.company {
+    font-style: italic;
+}
+
+.date {
+    color: rgb(187, 180, 85);
+    font-size: small;
+}
+
+.education ul {
+    margin: 2rem 0;
+}
+
+#degree{
+    font-weight: bold;
+    font-style: italic;
+}
+
+i {
+    color: rgb(187, 180, 85);
+    margin: 0.5rem
+}
+
+footer {
+    background-color: rgb(187, 180, 85);
+    padding: 0.5rem 0;
+    text-align: center;
+    line-height: 1.5;
+    color: whitesmoke;
+}
+
+footer i {
+    color: whitesmoke;
+}
