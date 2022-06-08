@@ -1,0 +1,107 @@
+.container {
+  border: 1px solid black;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+  padding: .5rem;
+  margin: 5rem auto;
+  max-width: 24rem;
+  width: 100%;
+}
+
+.container__box {
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  justify-items: stretch;
+  gap: 1rem .8rem;
+  padding: .5rem;
+}
+
+.container__el {
+  padding: .2rem;
+  background-color: rgba(185, 184, 184, 0.275);
+  border: 1.5px solid rgba(35, 31, 31, 0.275);
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(105, 95, 95, 0.275);
+  }
+}
+
+.container__chosen-el {
+  padding-top: .2rem;
+  padding-bottom: .5rem;
+  background-color: rgba(185, 184, 184, 0.275);
+  border: none;
+  text-transform: lowercase;
+  position: relative;
+  text-align: center;
+
+  &:hover {
+    cursor: default;
+  }
+}
+
+.container__close-btn {
+  color: white;
+  border: 3px solid white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  padding: 2px 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+
+  &:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+  }
+}
+
+.active {
+  background-color: white;
+}
+
+
+
+.container__checkbox {
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  background-color: #e5e5e5;
+  border: 1px solid #a3a3a3;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:after {
+    content: "X";
+    font-size: 10px;
+    font-weight: bold;
+    color: red;
+    display: none;
+  }
+
+  &:hover {
+    background-color: #dcdcdc;
+  }
+
+  &:checked {
+    background-color: white;
+  }
+
+  &:checked:after {
+    display: block;
+  }
+}

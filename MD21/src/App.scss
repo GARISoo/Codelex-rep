@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    border-top: 3px solid #fb5000;
+}
+
+.questions {
+    background-color: #fdf6ee;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+    background-color: #fdf6ee;
+    color: #573f42;
+}
+
+.intro__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.intro__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.intro__img {
+    max-height: 80%;
+    max-width: 500px;
+}
+
+.intro__h1 {
+    color: #fb5000;
+    margin-bottom: 4rem;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.intro__h2 {
+    color: #512b2b;
+    font-size: 36px;
+    margin-bottom: .5rem;
+}
+
+.intro__span {
+    color: #fb5000;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.intro__ul {
+    list-style: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.intro__li {
+    margin-top: 7px;
+}
+
+.intro__ul li::before {
+    content: "";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    background-color: #fb5000;
+    width: 9px;
+    height: 9px;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 5px;
+    /* Also needed for space (tweak if needed) */
+}
+
+.intro__btn {
+    color: white;
+    border-radius: 3px;
+    border: none;
+    line-height: 18px;
+    transition: color 0.3s ease-out;
+    background-color: #fb5000;
+    text-align: center;
+    padding: 13px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 192px;
+    margin: 5px 10px 5px 0;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #e84e06;
+    }
+}
+
+////////////////////////////////////////////
+
+.star {
+    color: red;
+}
+
+.question__container {
+    color: #512b2b;
+    background-color: #ebe7e2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    font-size: 16px;
+    max-width: 628px;
+    margin: 2rem auto;
+}
+
+.question__p {
+    margin-bottom: 1rem;
+}
+
+.question__input {
+    padding: 0 0.75rem;
+    border: 1px solid #d4c4bc;
+    border-bottom: 2px solid #72605e;
+    border-radius: 2px 2px 0 0;
+    height: 3rem;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.question__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.question__btn {
+    background-color: #fdc129;
+    border: 2px solid #fdc129;
+    color: #512b2b;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 1.125rem;
+    padding: 0 16px;
+    line-height: 1.5;
+    text-align: center;
+    height: 3rem;
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-transform: none;
+    overflow: visible;
+    box-sizing: border-box;
+
+    &:hover {
+        background-color: #f8d67f;
+    }
+
+    &:active {
+        padding: 0 15px;
+        border: 2px solid #d6a21f;
+    }
+
+    &:focus {
+        border: 2px solid black;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        background: #fff3d5;
+        color: #a38b80;
+    }
+}
+
+.question__selection {
+    margin-bottom: 1rem;
+}
+
+.question__btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropdown {
+    padding: 0 40px 0 12px;
+}
+
+select {
+    -webkit-appearance: none;
+    background: url('https://design.swedbankpay.com/v/9.1.0/designguide/assets/expand-more.svg');
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+textarea {
+    height: 8.125rem;
+    padding: 1rem 0.75rem;
+    background-color: #fff;
+    border: 1px solid #d4c4bc;
+    border-bottom: 2px solid #72605e;
+    border-radius: 2px 2px 0 0;
+    color: #512b2b;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+    resize: vertical;
+    overflow: auto;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-flex;
+    margin-left: 0.25rem;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    background-color: white;
+    color: #512b2b;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+    min-width: 5rem;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.has__error:not(:focus) {
+    border-color: #c5131c;
+    border-width: 2px;
+    background-image: url('https://design.swedbankpay.com/v/9.1.0/designguide/assets/warning.svg');
+    background-position: calc(100% - 0.5rem) 50%;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    padding-right: 2.5rem
+}
+
+.error__message {
+    color: #c5131c;
+    font-size: .875rem;
+    line-height: 1rem;
+    margin: 0.5rem 0;
+    min-height: 1rem;
+    position: relative;
+}
+
+.none {
+    display: none;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 545px;
+    margin: 0 auto;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    margin: 0 auto;
+}
+
+.step__box {
+    border-width: 2px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -10px;
+    margin-top: -20px;
+    top: 2.125rem;
+    width: 40px;
+    border: 2px solid rgb(211, 198, 198);
+    border-radius: 50%;
+    color: #767676;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+
+    &::before {
+        background-color: rgb(211, 198, 198);
+        content: "";
+        height: 1.5px;
+        right: 100%;
+        margin-top: -1px;
+        position: absolute;
+        top: 50%;
+        width: 102%;
+        z-index: 5;
+    }
+
+    &::after {
+        background-color: rgb(211, 198, 198);
+        content: "";
+        height: 1.5px;
+        left: 100%;
+        margin-top: -1px;
+        position: absolute;
+        top: 50%;
+        width: 102%;
+        z-index: 5;
+    }
+}
+
+.step__done {
+    background-image: url('https://www.svgrepo.com/show/381545/check-mark.svg');
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fdc129;
+    border: 2px solid #fdc129;
+
+    &::after {
+        background-color: #fdc129;
+    }
+
+    &::before {
+        background-color: #fdc129;
+    }
+}
+
+.step__active {
+    color: #512b2b;
+    border: 2px solid #fdc129;
+
+    &::before {
+        background-color: #fdc129;
+    }
+}
+
+.invis-left::before,
+.invis-right::after {
+    background-color: transparent;
+}
+
+.step__p {
+    padding-top: 1rem;
+    color: #767676;
+}
+
+.bold {
+    font-weight: 700;
+    color: #512b2b;
+}
+
+.fit {
+    max-width: 60%;
+}
+
+.summary__p {
+    margin-top: .2rem;
+}
+
+.summary__ul {
+    padding-left: 0;
+    margin-top: .2rem;
+}
+
+.summary__li {
+    list-style-type: none;
+}
+
+.summary__cancel {
+    margin: 0 auto;
+    padding: 8px 16px;
+    color: #512b2b;
+    
+
+    &:hover {
+        border: 1px solid black;
+        border-radius: 2px;
+        padding: 7px 15px;
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.gap {
+    margin-top: 2rem;
+}
