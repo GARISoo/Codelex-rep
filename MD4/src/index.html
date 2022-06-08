@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="scripts.js"></script>
+    <title>Haralda formas</title>
+</head>
+<body>
+    <div class="theme-buttons">
+        <button id="dark-toggle"><i class="fa-solid fa-moon"></i></button>
+        <button id="light-toggle"><i class="fa-solid fa-sun"></i></button>
+    </div>
+    <form class="form">
+
+        <div class="form__username">
+            <label class="form__label">
+                Username
+                <br>
+                <input 
+                    class="form__input"
+                    type="text" 
+                    placeholder="username" 
+                    maxlength="20" 
+                    required>
+            </label>
+        </div>
+        
+        <div class="form__password">
+            <label class="form__label">
+                Password
+                <br>
+                <input
+                    class="form__input"
+                    type="password" 
+                    placeholder="password" 
+                    maxlength="20"  
+                    required>
+            </label>
+        </div>
+
+        <div class="form__subscribe">
+            <label class="form__switch">
+                <input type="checkbox">
+                <span class="form__slider"></span>
+            </label>
+            <span>Subscribe to News</span>
+        </div>
+
+        <div class="form__actions">
+            <button class="form__button">Sign In</button>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Forgot your password?</a>
+        </div>
+
+        <hr>
+
+        <div class="form__social">
+            <span>or continue with</span>
+            <div class="form__icons">
+                <a href="https://accounts.google.com/servicelogin" target="_blank"><i class="fa-brands fa-google"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+
+    </form>
+    <form class="form form--contact-us">
+
+        <h1>Contact Us</h1>
+
+        <div class="form__name">
+            <label class="form__label">
+                Your name
+                <br>
+                <input 
+                    class="form__input"
+                    type="text" 
+                    placeholder="name"
+                    maxlength="25"  
+                    required>
+            </label>
+            <label class="form__label">
+                Your surname
+                <br>
+                <input 
+                    class="form__input"
+                    type="text" 
+                    placeholder="surname"
+                    maxlength="25"  
+                    required>
+            </label>
+        </div>
+
+        <div class="form__contacts">
+            <label class="form__label">
+                Your e-mail
+                <br>
+                <input 
+                    class="form__input"
+                    type="email" 
+                    placeholder="e-mail@email.com" 
+                    required>
+            </label>
+            <label class="form__label">
+                Your phone-number
+                <br>
+                <input 
+                    class="form__input"
+                    type="number" 
+                    placeholder="phone-number"  
+                    required>
+            </label>
+        </div>
+        
+        <div class="form__news">
+            <label class="form__label">
+                Subscribe to News
+                <input type="checkbox">
+                <span class="form__checkmark"></span>
+            </label>
+        </div>
+
+        <div class="form__message">
+            <label class="form__label">
+                Your message (max 150 characters)
+                <br>
+                <textarea placeholder="type message..." id="message" style="resize: none;" maxlength="150"></textarea>
+            </label>
+        </div>
+
+        <div class="form__submit">
+            <button class="form__button">Submit</button>
+        </div>
+    </form>
+    <div class="contacts">
+
+        <div class="contacts__left">
+            <h5>Contact Information</h5>
+            <span>Here`s some additional support text to help set user expectations. </span>
+            <ul class="contacts__list">
+                <li><i class="fa-solid fa-phone"></i>123-456-7890</li>
+                <li><i class="fa-solid fa-envelope"></i>support@minerva.com</li>
+            </ul>
+        </div>
+
+        <form class="form--contact-us">
+
+            <h1>Contact Us</h1>
+
+            <div class="form__name">
+                <label class="form__label">
+                    Your name
+                    <br>
+                    <input 
+                        class="form__input"
+                        type="text" 
+                        placeholder="name"
+                        maxlength="25"  
+                        required>
+                </label>
+                <label class="form__label">
+                    Your surname
+                    <br>
+                    <input 
+                        class="form__input"
+                        type="text" 
+                        placeholder="surname"
+                        maxlength="25"  
+                        required>
+                </label>
+            </div>
+
+            <div class="form__contacts">
+                <label>
+                    Your e-mail
+                    <br>
+                    <input 
+                        class="form__input"
+                        type="email" 
+                        placeholder="e-mail" 
+                        required>
+                </label>
+                <label>
+                    Your phone-number
+                    <br>
+                    <input 
+                        class="form__input"
+                        type="number" 
+                        placeholder="phone-number"  
+                        required>
+                </label>
+            </div>
+
+            <div class="form__date">
+                <label>
+                    Your birth of date
+                    <br>
+                    <input 
+                        class="form__input"
+                        type="date" 
+                        value="2000-01-01"
+                        min="1990-01-01" 
+                        max="2022-01-01" 
+                        required>
+                </label>
+            </div>
+
+            <div class="form__message">
+                <label>
+                    Your message (max 150 characters)
+                    <br>
+                    <textarea placeholder="type message..." id="contacts__message" style="resize: none;" maxlength="150"></textarea>
+                </label>
+            </div>
+
+            <div class="form__submit">
+                <button class="form__button">Submit</button>
+            </div>
+            
+        </form>
+    </div>
+    <div class="form form--checkout">
+        <h2>Checkout</h2>
+        <div class="checkout__top">
+            <div class="checkout__order">
+                <h4>Your Order</h4>
+                <div class="checkout__list">
+                    <ul>
+                        <li>Eggshell Plant Pot</li>
+                        <li>Size: Medium</li>
+                        <li>Qty: 1</li>
+                        <li>$25.00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="checkout__details">
+                <h4>Delivery Details</h4>
+                <div class="checkout__list">
+                    <ul>
+                        <li>Adam Sandler</li>
+                        <li>1234 Fake St</li>
+                        <li>Milwaukee, WI 53203</li>
+                    </ul>
+                    <ul>
+                        <li>Shipping Speed</li>
+                        <li>$7.00 No Rush Shipping</li>
+                        <li>Arrives by 1/16/22</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="checkout__method">
+            <h4>Payment Method</h4>
+            <form class="checkout__form">
+                <div class="checkout__card-info">
+                    <label class="form__label">
+                        Card Number
+                        <br>
+                        <input 
+                            class="form__input"
+                            type="number" 
+                            placeholder="XXXX-XXXX-XXXX-XXXX" 
+                            maxlength="16" 
+                            required>
+                    </label>
+                    <label class="form__label">
+                        CVV
+                        <br>
+                        <input 
+                            class="form__input"
+                            type="number" 
+                            placeholder="XXX" 
+                            maxlength="3" 
+                            required>
+                    </label>
+                    <label class="form__label">
+                        Expiration Date
+                        <br>
+                        <input 
+                            class="form__input"
+                            type="date"  
+                            required>
+                    </label>
+                </div>
+                <button class="form__button form__button--checkout">Continue</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
