@@ -1,0 +1,139 @@
+.homepage {
+    display: grid;
+    grid-template-columns: repeat(5, 15%);
+    gap: 1rem 2rem;
+    padding: 1rem 4rem 4rem 4rem;
+    justify-content: center;
+}
+
+.main {
+    background-color: #EFC050;
+}
+
+.pokemon__box {
+    padding: .5rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 15rem;
+    background-color: #a17e2d;
+
+    &:hover {
+        opacity: .7;
+    }
+
+    &:active {
+        opacity: .5;
+    }
+}
+
+.pok__img {
+    max-width: 6rem;
+}
+
+p {
+    margin: 0;
+}
+
+.pokemon {
+    margin: 3rem auto;
+}
+
+:root {
+    background-color: #EFC050;
+}
+
+.pokemon__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 1rem;
+    max-width: 15rem;
+    margin: 0 auto;
+    padding: .5rem;
+    background-color: #a17e2d;
+}
+
+.pokemon__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.pokemon__img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon__h3 {
+    text-transform: uppercase;
+}
+
+b {
+    cursor: pointer;
+    margin-top: .5rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    column-gap: 2rem;
+}
+
+button {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+
+    &:hover {
+        background-color: initial;
+        background-position: 0 0;
+        color: #FF4742;
+    }
+
+    &:active {
+        background-color: initial;
+        background-position: 0 0;
+        color: #FF4742;
+        opacity: .5;
+    }
+    &:disabled {
+        cursor: not-allowed;
+        background-color: initial;
+        background-position: 0 0;
+        color: #FF4742;
+    }
+}
