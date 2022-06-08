@@ -1,0 +1,13 @@
+.cats {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    margin: 1em;
+}
+
+.cats__img {
+    width: 10em;
+    height: 10em;
+    border: 2px solid #111;
+    border-radius: 50%;
+}
