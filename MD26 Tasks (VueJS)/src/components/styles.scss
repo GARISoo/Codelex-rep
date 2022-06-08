@@ -1,0 +1,21 @@
+.task__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid black;
+    margin: 1rem auto;
+    width: 90%;
+}
+
+.task__color-box {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 2rem;
+    margin: .5rem;
+}
+
+.orange {
+    background-color: orange;
+}

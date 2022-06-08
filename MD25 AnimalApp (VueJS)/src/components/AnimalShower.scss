@@ -1,0 +1,41 @@
+.animal__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    margin: .5rem;
+}
+
+.animal__box {
+    display: flex;
+    justify-content: space-between;
+    padding: .4rem;
+    border: 1px solid black;
+    width: 100%;
+    background-color: rgb(245, 211, 235);
+}
+
+.animal__remove-btn {
+    background-color: inherit;
+    border: none;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.animal__remove-btn:hover {
+    opacity: .4;
+}
+
+.animal__name {
+    font-weight: 700;
+}
+
+.animal__species {
+    text-transform: uppercase;
+}
+
+.dogClass {
+    background-color: rgb(205, 243, 201);
+}
