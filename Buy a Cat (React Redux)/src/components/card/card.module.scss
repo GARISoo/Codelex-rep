@@ -1,0 +1,93 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid black;
+    border-radius: 1rem;
+    margin: 1rem;
+    max-width: 25rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: rgba(91, 95, 106, 0.3) 10px 10px 10px 10px;
+}
+
+.card__img {
+    width: 250px;
+    height: 250px;
+    border-radius: 1rem;
+}
+
+.card__top {
+    border-bottom: 1px solid black;
+    padding: .5rem;
+    margin-bottom: .5rem;
+
+}
+
+.card__middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card__counter {
+    display: flex;
+    justify-content: center;
+    column-gap: .5rem;
+    padding: .5rem;
+}
+
+.card__bottom {
+    text-align: center;
+    padding: .5rem 1rem;
+}
+
+.card__h3 {
+    margin: 0;
+}
+
+.card__btn, .card__buy {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+
+  &:hover {
+    background-color: #f7fafa;
+  }
+
+  &:focus {
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0; 
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.card__buy {
+    font-weight: 700;
+    background-color: #b0b3b3;
+    transition: all 235ms ease-in-out;
+
+    &:hover {
+        background-color: #b0b3b3;
+        border: 1px solid black;
+      }
+}

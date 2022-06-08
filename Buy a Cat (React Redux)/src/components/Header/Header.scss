@@ -1,0 +1,79 @@
+.header {
+    background-image: url('./catHeader.jpg');
+    height: 16rem;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom: 6px solid black;
+    box-sizing: border-box;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(184, 218, 248);
+    border: 4px solid black;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom: none;
+    padding: .5rem 1rem .1rem 1rem;
+    width: 60%;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    font-weight: 700;
+    transition: all 235ms ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        opacity: .3;
+    }
+}
+
+.active {
+    opacity: .5;
+    text-decoration: underline;
+}
+
+.header__btn {
+    background-color: transparent;
+    font-weight: 800;
+    color: red;
+    padding: .2rem .4rem;
+    margin-left: .2rem;
+    border-radius: 50%;
+    border: none;
+    transition: all 235ms ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        transform: translate3d(0, 2px, 0);
+    }
+
+    &:active {
+        opacity: .5;
+    }
+}
+
+.header__count {
+    font-weight: 400;
+    transition: all 235ms ease-in-out;
+    font-size: 12px;
+}
+
+.nav__icon {
+    padding: 1px 18px 1px 10px;
+    background-image: url('./shoppingcart.png');
+    background-size: cover;
+    transition: all 235ms ease-in-out;
+}
+
+.header__nav-right {
+    display: flex;
+    flex-direction: row;
+}
