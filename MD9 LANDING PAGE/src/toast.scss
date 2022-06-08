@@ -1,0 +1,43 @@
+
+
+.toast__icon {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    color: white;
+}
+
+.toast__text {
+    color: white;
+    padding-right: 50px;
+}
+
+nav {
+    position: relative;
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    right: -500px;
+    background-color: black;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    border: 5px solid #a78822;
+    opacity: 0%;
+    transition: all 0.5s ease-out;
+}
+
+.toast-active {
+    right: 0;
+    opacity: 100%;
+}
+
+.toast__close-button {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
